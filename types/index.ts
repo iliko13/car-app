@@ -41,3 +41,23 @@ export type FilterProps = {
 export type HomeProps = {
   searchParams: FilterProps;
 };
+
+export type OptionProps = {
+  title: string;
+  value: string;
+};
+
+export type CustomFilterProps = {
+  title: string;
+  options: OptionProps[];
+};
+
+export type ShowMoreProps = {
+  pageNumber: number;
+  isNext: boolean;
+};
+
+export interface SearchManuFacturerProps {
+  manufacturer: string;
+  setManuFacturer: (manufacturer: string) => void;
+}
